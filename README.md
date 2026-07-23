@@ -331,10 +331,9 @@ Example workflows tested:
 ![image](https://github.com/VGSAIRAIMA/Drone-Delivery-System/blob/main/route_search.png)
 
 #  DEVELOPER
-**V G Sairaima **
 
+# V G Sairaima 
 B.E. Computer Science and Engineering
-
 Java | Spring Boot | Microservices | REST APIs | MySQL | Backend Development
 
 
