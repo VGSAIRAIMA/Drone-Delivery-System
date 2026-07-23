@@ -22,4 +22,29 @@ The system performs the following operations:
 All client requests are routed through a centralized API Gateway.
 
 # System Architecture
-![image](
+![image](https://github.com/VGSAIRAIMA/Drone-Delivery-System/blob/main/Screenshot%202026-07-23%20140307.png)
+
+# WORKFLOW
+
+Register Package
+       │
+       ▼
+Find Available Drone
+       │
+       ▼
+Find Best Route
+       │
+       ▼
+Assign Delivery
+       │
+       ▼
+Update Package Status
+       │
+       ▼
+Start Delivery
+       │
+       ▼
+Complete Delivery
+
+# TECHNOLOGY STACK
+
