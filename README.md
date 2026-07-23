@@ -22,10 +22,12 @@ The system performs the following operations:
 All client requests are routed through a centralized API Gateway.
 
 # System Architecture
+
 ![image](https://github.com/VGSAIRAIMA/Drone-Delivery-System/blob/main/Screenshot%202026-07-23%20140307.png)
 
-# WORKFLOW
 
+# WORKFLOW
+```
 Register Package
        │
        ▼
@@ -45,13 +47,14 @@ Start Delivery
        │
        ▼
 Complete Delivery
+```
 
 # TECHNOLOGY STACK
 ![image](https://github.com/VGSAIRAIMA/Drone-Delivery-System/blob/main/image_20c78c84.png)
 
 # MICROSERVICES
 
-# PACKAGE SERVICE
+# 1] PACKAGE SERVICE
 
 # RESPONSIBILITIES
 
@@ -60,6 +63,7 @@ Complete Delivery
 - Update package status
 
 # ENDPOINTS
+```
 
  Method   Endpoint 
 
@@ -67,7 +71,8 @@ Complete Delivery
  GET      /packages/{id} 
  PUT      /packages/{id}/status 
 
- # DRONE SERVICE
+```
+# 2]  DRONE SERVICE
 
  # RESPONSIBILITIES
 
@@ -78,7 +83,7 @@ Complete Delivery
 - Delete drones
 
 ## ENDPOINTS
-
+```
  Method  Endpoint 
 
  POST   /drones 
@@ -87,8 +92,9 @@ Complete Delivery
   GET   /drones/available 
   PUT   /drones/{id}/status 
  DELETE /drones/{id} 
+```
 
-## ROUTE SERVICE
+## 3] ROUTE SERVICE
 
  ## Responsibilities
 
@@ -99,7 +105,7 @@ Complete Delivery
 - Search the best route
 
 ## Endpoints
-
+```
 Method  Endpoint 
 
  POST  /routes/create 
@@ -108,6 +114,31 @@ Method  Endpoint
  PUT  /routes/{id} 
  DELETE  /routes/{id} 
  GET  /routes/search 
+```
+
+# 4] DELIVERY SERVICE
+
+## Responsibilities
+
+- Assign deliveries
+- Retrieve delivery details
+- View all deliveries
+- Start delivery
+- Complete delivery
+- Assign available drones to packages
+- Track delivery progress
+
+## Endpoints
+
+```
+Method     Endpoint
+
+POST       /deliveries
+GET        /deliveries
+GET        /deliveries/{id}
+PUT        /deliveries/{id}/start
+PUT        /deliveries/{id}/complete
+```
 
 # API Gateway
 
@@ -299,8 +330,8 @@ Example workflows tested:
 ![image](https://github.com/VGSAIRAIMA/Drone-Delivery-System/blob/main/route_get.png)
 ![image](https://github.com/VGSAIRAIMA/Drone-Delivery-System/blob/main/route_search.png)
 
-#  BY
-**Sai Raima V G**
+#  DEVELOPER
+**V G Sairaima **
 
 B.E. Computer Science and Engineering
 
